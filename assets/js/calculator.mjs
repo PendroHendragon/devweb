@@ -16,17 +16,22 @@ function calculator(buttonValue){
     if(operationList.includes(buttonValue)){
         console.log(buttonValue);
         if(buttonValue == '='){
-            numero2 = display.value;
-            const total = eval(numero1+operation+numero2);
+            numero1 += display.value;
+            console.log(numero1);
+            const total = eval(numero1);
             display.value = total;
+            numero1 =""
         } else {
-            numero1 = display.value;
+            
             operation = buttonValue;
+            numero1 += (display.value+operation);
             display.value = "";
+            operation = null;
         }
     } else {
         if(buttonValue=='clear'){
             display.value = "";
+            numero1 = "";
         }else{
            if(buttonValue != '.'){
                display.value += buttonValue;
