@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <style>
+        button{
+            margin: 4px;
+        }
+    </style>
+</head>
+<body>
+    <form id="app" style="display:flex; justify-content:center; align-items:center;">
+        <div class="box" style="width: 300px; height: auto; background-color: cadetblue;">
+            <div>
+                <label class="label">Calculator</label>
+                <input type="text" readonly class="input" style="width: 80%; margin: 4px;">
+            </div>
+            <div style="display: flex;flex-direction: row;">
+                <div id="numebers">
+                    <div>
+                        <button value="7" class="button">7</button>
+                        <button value="8" class="button">8</button>
+                        <button value="9" class="button">9</button>
+                    </div>
+                    <div>
+                        <button value="4" class="button">4</button>
+                        <button value="5" class="button">5</button>
+                        <button value="6" class="button">6</button>
+            
+                    </div>
+                    <div>
+                        <button value="1" class="button">1</button>
+                        <button value="2" class="button">2</button>
+                        <button value="3" class="button">3</button>
+            
+                    </div>
+                    <div>
+                        <button value="0" class="button">0</button>
+                        <button value="." class="button">.</button>
+                        <button value="clear" class="button">C</button>
+                    </div>
+    
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                    <button value="+" class="button">+</button>
+                    <button value="-" class="button">-</button>
+                    <button value="*" class="button">*</button>
+                    <button value="/" class="button">/</button>
+                </div>
+
+            </div>
+           
+            
+            
+            <div>
+                <button value="=" class="button" style="width: 80%;">=</button>
+                
+            </div>
+
+        </div>
+        
+    </form>
+    <footer>
+        <script src="app.mjs" type="module"></script>
+    </footer>
+</body>
+</html>
